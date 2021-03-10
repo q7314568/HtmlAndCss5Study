@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows:1fr 2fr 2fr 1fr;
+            grid-template-areas: "header header header"
+                                 "nav main ads"
+                                 "nav main featured"
+                                 "footer footer footer";
+
+        }
+        #one{
+            grid-area: header;
+        }
+        #two{
+            grid-area: nav;
+        }
+        #three{
+            grid-area: main;
+
+        }
+        #four{
+            grid-area: ads;
+
+        }
+        #five{
+            grid-area: featured;
+
+        }
+        #six{
+            grid-area: footer;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+      
+    </div>
+</body>
+
+</html>

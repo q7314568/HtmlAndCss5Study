@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: 1em;
+  gap: 5px;
+  /*改為逐欄填入  */
+  /* grid-auto-flow: column; */
+  /* 稠密模式，元素會試著依照規則填入空缺 */
+  /* grid-auto-flow: dense; */
+}
+.box2,.box3{
+  /* grid-column-end: span 2; */
+  /* width: 40vw; */
+}
+
+.even{
+  background-color: rgb(160, 4, 4)  !important;
+}
+
+.box{
+  border: 1px rgb(117, 87, 4);
+  background-color: chocolate;
+  border-style: dotted;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width:950px){
+  .wrapper{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media screen and (max-width:690px){
+  .wrapper{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}

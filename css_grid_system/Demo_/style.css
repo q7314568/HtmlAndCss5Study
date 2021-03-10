@@ -1,0 +1,33 @@
+.wrapper {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.main {
+    background-color: blue;
+}
+
+.sub {
+    background-color: red;
+}
+
+@media screen and (max-width:950px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "mainArea mainArea";
+                             
+    }
+    .main {
+        grid-area: mainArea;
+    }
+}
+
+@media screen and (max-width:650px){
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: "mainArea";
+    }
+    
+}

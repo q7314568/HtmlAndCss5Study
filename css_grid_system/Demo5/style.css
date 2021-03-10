@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 定義 grid-row(列)高度最小100px */
+  /* grid-auto-rows: minmax(100px, auto); */
+
+  /* 定義第二格最小260px 最大1fr */
+  /* grid-template-columns: 1fr minmax(260px, 1fr) 1fr; */
+
+
+  /* 利用minmax 搭配min() 定義最小為 100px 或 容器的100%(取決於誰最小) */
+  /* grid-template-columns: repeat(auto-fit, minmax(min(100%,100px), 1fr)); */
+
+
+  border: 1em;
+  gap: 5px;
+  color: white;
+}
+
+
+.box{
+  border: 2px rgb(117, 87, 4);
+  background-color: chocolate;
+  border-style: dotted;
+  color: white;
+  padding: 10px;
+}
+
+/* 
+@media screen and (min-width:961px){
+  .wrapper{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,100px), 1fr));
+  }
+}
+
+
+@media screen and (max-width:960px){
+  .wrapper{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,300px), 1fr));
+    
+  }
+}
+
+@media screen and (max-width:650px){
+  .wrapper{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,600px), 1fr));
+  }
+} */

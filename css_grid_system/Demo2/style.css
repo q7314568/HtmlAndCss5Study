@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+
+  /* demo for fr */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+
+  /* demo for line name */
+  /* grid-template-columns: [line_start] 1fr 1fr [line_end] 1fr; */
+
+  /* demo for mixing unit with fr */
+  /* grid-template-columns: 1fr 2fr 50% 200px; */
+
+  grid-template-rows: 50px;
+
+  border: 1em;
+  gap: 5px;
+}
+
+
+.box{
+  background-color: chocolate;
+  border: 1px rgb(117, 87, 4);
+  border-style: dotted;
+  color: white;
+  padding: 10px;
+}
+
+
+.box1{
+  /* grid-column-start: line_start;
+  grid-column-end: line_end; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Question */
+/* .wrapper{
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 200px 300px;
+} */
